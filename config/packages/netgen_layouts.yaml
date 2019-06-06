@@ -1,2 +1,2 @@
-netgen_block_manager:
+netgen_layouts:
     pagelayout: base.html.twig
