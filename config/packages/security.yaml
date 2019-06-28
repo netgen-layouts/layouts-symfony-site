@@ -9,7 +9,7 @@ security:
                 users:
                     admin:
                         password: '%netgen_layouts.admin.password%'
-                        roles: ROLE_NGBM_ADMIN
+                        roles: ROLE_NGLAYOUTS_ADMIN
 
     encoders:
         Symfony\Component\Security\Core\User\User: plaintext
@@ -32,7 +32,7 @@ security:
     # Easy way to control access for large sections of your site
     # Note: Only the *first* access control that matches will be used
     access_control:
-        - { path: ^/bm/(api|(dev/)?app|admin), role: [ROLE_NGBM_ADMIN] }
-        - { path: ^/cb, role: [ROLE_NGBM_ADMIN] }
+        - { path: ^/nglayouts/(api|(dev/)?app|admin), role: [ROLE_NGLAYOUTS_ADMIN] }
+        - { path: ^/cb, role: [ROLE_NGLAYOUTS_ADMIN] }
         # - { path: ^/admin, roles: ROLE_ADMIN }
         # - { path: ^/profile, roles: ROLE_USER }
