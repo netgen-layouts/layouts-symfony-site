@@ -3,10 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        {% block stylesheets %}
+            {% include '@NetgenLayouts/stylesheets.html.twig' %}
+            {% include '@NetgenLayoutsStandard/stylesheets.html.twig' with {full: true} %}
+        {% endblock %}
     </head>
     <body>
-        {% block content %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        {% block layout %}
+            {% block body %}{% endblock %}
+        {% endblock %}
+
+        {% block javascripts %}
+            {% include '@NetgenLayouts/javascripts.html.twig' %}
+            {% include '@NetgenLayoutsStandard/javascripts.html.twig' with {full: true} %}
+        {% endblock %}
     </body>
 </html>
