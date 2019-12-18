@@ -4,30 +4,32 @@
     "license": "MIT",
     "description": "Skeleton project allowing you to bootstrap a new site based on Netgen Layouts and Symfony",
     "require": {
-        "php": "^7.1.3",
+        "php": "^7.2.5",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "sensio/framework-extra-bundle": "^5.1",
-        "symfony/asset": "4.3.*",
-        "symfony/console": "4.3.*",
-        "symfony/dotenv": "4.3.*",
-        "symfony/expression-language": "4.3.*",
+        "symfony/asset": "*",
+        "symfony/console": "*",
+        "symfony/dotenv": "*",
+        "symfony/expression-language": "*",
         "symfony/flex": "^1.3.1",
-        "symfony/form": "4.3.*",
-        "symfony/framework-bundle": "4.3.*",
-        "symfony/http-client": "4.3.*",
-        "symfony/intl": "4.3.*",
+        "symfony/form": "*",
+        "symfony/framework-bundle": "*",
+        "symfony/http-client": "*",
+        "symfony/intl": "*",
+        "symfony/mailer": "*",
         "symfony/monolog-bundle": "^3.1",
+        "symfony/notifier": "*",
         "symfony/orm-pack": "*",
-        "symfony/process": "4.3.*",
-        "symfony/security-bundle": "4.3.*",
+        "symfony/process": "*",
+        "symfony/security-bundle": "*",
         "symfony/serializer-pack": "*",
-        "symfony/swiftmailer-bundle": "^3.1",
-        "symfony/translation": "4.3.*",
-        "symfony/twig-bundle": "4.3.*",
-        "symfony/validator": "4.3.*",
-        "symfony/web-link": "4.3.*",
-        "symfony/yaml": "4.3.*",
+        "symfony/string": "*",
+        "symfony/translation": "*",
+        "symfony/twig-pack": "*",
+        "symfony/validator": "*",
+        "symfony/web-link": "*",
+        "symfony/yaml": "*",
 
         "netgen/layouts-standard": "~1.1.0"
     },
@@ -35,10 +37,7 @@
         "symfony/debug-pack": "*",
         "symfony/maker-bundle": "^1.0",
         "symfony/profiler-pack": "*",
-        "symfony/test-pack": "*",
-        "symfony/web-server-bundle": "4.3.*",
-
-        "franzl/studio": "*"
+        "symfony/test-pack": "*"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -61,6 +60,7 @@
         "paragonie/random_compat": "2.*",
         "symfony/polyfill-ctype": "*",
         "symfony/polyfill-iconv": "*",
+        "symfony/polyfill-php72": "*",
         "symfony/polyfill-php71": "*",
         "symfony/polyfill-php70": "*",
         "symfony/polyfill-php56": "*"
@@ -83,7 +83,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": true,
-            "require": "4.3.*"
+            "require": "5.0.*"
         },
         "branch-alias": {
             "dev-master": "1.1.x-dev"
