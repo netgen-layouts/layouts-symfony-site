@@ -31,8 +31,7 @@
         "symfony/web-link": "*",
         "symfony/yaml": "*",
 
-        "netgen/layouts-standard": "~1.1.0",
-        "php-http/socket-client": "^2.0@beta"
+        "netgen/layouts-standard": "~1.1.0"
     },
     "require-dev": {
         "symfony/debug-pack": "*",
