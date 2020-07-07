@@ -32,7 +32,7 @@
         "symfony/web-link": "*",
         "symfony/yaml": "*",
 
-        "netgen/layouts-standard": "~1.1.0"
+        "netgen/layouts-standard": "~1.2.0"
     },
     "require-dev": {
         "symfony/debug-pack": "*",
@@ -40,6 +40,8 @@
         "symfony/profiler-pack": "*",
         "symfony/test-pack": "*"
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "config": {
         "optimize-autoloader": true,
         "preferred-install": {
@@ -86,7 +88,7 @@
             "require": "5.1.*"
         },
         "branch-alias": {
-            "dev-master": "1.1.x-dev"
+            "dev-master": "1.2.x-dev"
         }
     }
 }
