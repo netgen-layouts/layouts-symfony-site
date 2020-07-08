@@ -40,8 +40,6 @@
         "symfony/profiler-pack": "*",
         "symfony/test-pack": "*"
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "config": {
         "optimize-autoloader": true,
         "preferred-install": {
