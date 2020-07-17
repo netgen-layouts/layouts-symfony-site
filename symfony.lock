@@ -9,7 +9,7 @@
         "version": "v1.4.1"
     },
     "composer/package-versions-deprecated": {
-        "version": "1.8.1"
+        "version": "1.10.99"
     },
     "doctrine/annotations": {
         "version": "1.0",
@@ -51,16 +51,16 @@
         ]
     },
     "doctrine/doctrine-migrations-bundle": {
-        "version": "1.2",
+        "version": "2.2",
         "recipe": {
             "repo": "github.com/symfony/recipes",
             "branch": "master",
-            "version": "1.2",
-            "ref": "c1431086fec31f17fbcfe6d6d7e92059458facc1"
+            "version": "2.2",
+            "ref": "baaa439e3e3179e69e3da84b671f0a3e4a2f56ad"
         },
         "files": [
             "config/packages/doctrine_migrations.yaml",
-            "src/Migrations/.gitignore"
+            "migrations/.gitignore"
         ]
     },
     "doctrine/event-manager": {
@@ -76,7 +76,7 @@
         "version": "1.2.1"
     },
     "doctrine/migrations": {
-        "version": "2.2.1"
+        "version": "3.0.1"
     },
     "doctrine/orm": {
         "version": "v2.7.3"
@@ -178,13 +178,13 @@
         "version": "7.4"
     },
     "php-http/client-common": {
-        "version": "2.2.0"
+        "version": "2.2.1"
     },
     "php-http/discovery": {
-        "version": "1.9.0"
+        "version": "1.9.1"
     },
     "php-http/httplug": {
-        "version": "2.1.0"
+        "version": "2.2.0"
     },
     "php-http/message": {
         "version": "1.8.0"
@@ -443,7 +443,7 @@
         "version": "v5.1.2"
     },
     "symfony/orm-pack": {
-        "version": "v1.1.0"
+        "version": "v2.0.0"
     },
     "symfony/phpunit-bridge": {
         "version": "4.3",
@@ -461,28 +461,28 @@
         ]
     },
     "symfony/polyfill-intl-grapheme": {
-        "version": "v1.17.1"
+        "version": "v1.18.0"
     },
     "symfony/polyfill-intl-icu": {
-        "version": "v1.17.1"
+        "version": "v1.18.0"
     },
     "symfony/polyfill-intl-idn": {
-        "version": "v1.17.1"
+        "version": "v1.18.0"
     },
     "symfony/polyfill-intl-normalizer": {
-        "version": "v1.17.1"
+        "version": "v1.18.0"
     },
     "symfony/polyfill-mbstring": {
-        "version": "v1.17.1"
+        "version": "v1.18.0"
     },
     "symfony/polyfill-php73": {
-        "version": "v1.17.1"
+        "version": "v1.18.0"
     },
     "symfony/polyfill-php74": {
-        "version": "v1.17.0"
+        "version": "v1.18.0"
     },
     "symfony/polyfill-php80": {
-        "version": "v1.17.1"
+        "version": "v1.18.0"
     },
     "symfony/process": {
         "version": "v5.1.2"
