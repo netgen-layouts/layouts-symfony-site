@@ -4,7 +4,7 @@
     "license": "MIT",
     "description": "Skeleton project allowing you to bootstrap a new site based on Netgen Layouts and Symfony",
     "require": {
-        "php": "^7.4",
+        "php": ">=7.4",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "composer/package-versions-deprecated": "1.11.99.1",
