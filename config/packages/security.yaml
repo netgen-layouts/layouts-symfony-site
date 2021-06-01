@@ -2,6 +2,8 @@ parameters:
     netgen_layouts.admin.password: '%env(NETGEN_LAYOUTS_ADMIN_PASSWORD)%'
 
 security:
+    # https://symfony.com/doc/current/security/experimental_authenticators.html
+    enable_authenticator_manager: true
     # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
     providers:
         users_in_memory:
@@ -9,17 +11,16 @@ security:
                 users:
                     admin:
                         password: '%netgen_layouts.admin.password%'
-                        roles: ROLE_NGLAYOUTS_ADMIN
+                        roles: [ROLE_NGLAYOUTS_ADMIN]
 
-    encoders:
-        Symfony\Component\Security\Core\User\User: plaintext
+    password_hashers:
+        Symfony\Component\Security\Core\User\InMemoryUser: plaintext
 
     firewalls:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
         main:
-            anonymous: true
             lazy: true
             provider: users_in_memory
 
@@ -29,12 +30,12 @@ security:
             # https://symfony.com/doc/current/security/impersonating_user.html
             # switch_user: true
 
-            http_basic: true
+            http_basic: ~
 
     # Easy way to control access for large sections of your site
     # Note: Only the *first* access control that matches will be used
     access_control:
-        - { path: ^/nglayouts/(api|(dev/)?app|admin), role: [ROLE_NGLAYOUTS_ADMIN] }
-        - { path: ^/cb, role: [ROLE_NGLAYOUTS_ADMIN] }
         # - { path: ^/admin, roles: ROLE_ADMIN }
         # - { path: ^/profile, roles: ROLE_USER }
+        - { path: ^/nglayouts/(api|(dev/)?app|admin), roles: ROLE_NGLAYOUTS_ADMIN }
+        - { path: ^/cb, roles: ROLE_NGLAYOUTS_ADMIN }

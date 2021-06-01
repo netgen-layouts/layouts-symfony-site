@@ -1,2 +1,2 @@
 netgen_layouts:
-    pagelayout: base.html.twig
+    pagelayout: 'base.html.twig'
