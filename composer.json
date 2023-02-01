@@ -72,6 +72,10 @@
     "extra": {
         "symfony": {
             "allow-contrib": true,
+            "endpoint": [
+                "https://api.github.com/repos/netgen-layouts/recipes/contents/index.json?ref=flex",
+                "flex://defaults"
+            ],
             "require": "6.2.*",
             "docker": false
         },
