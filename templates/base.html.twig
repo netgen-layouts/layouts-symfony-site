@@ -3,17 +3,18 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
         {% block stylesheets %}
-            {% include '@NetgenLayouts/stylesheets.html.twig' %}
-            {% include '@NetgenLayoutsStandard/stylesheets.html.twig' with {full: true} %}
+            {{ include('@NetgenLayouts/stylesheets.html.twig') }}
+            {{ include('@NetgenLayoutsStandard/stylesheets.html.twig', { full: true }) }}
         {% endblock %}
 
         {% block javascripts %}
-            {% include '@NetgenLayouts/javascripts.html.twig' %}
-            {% include '@NetgenLayoutsStandard/javascripts.html.twig' with {full: true} %}
+            {% block importmap %}{{ importmap('app') }}{% endblock %}
 
-            {{ nglayouts_template_plugin('preview.javascripts') }}
+            {{ include('@NetgenLayouts/javascripts.html.twig') }}
+            {{ include('@NetgenLayoutsStandard/javascripts.html.twig', { full: true }) }}
+            {{ include('@NetgenLayouts/preview/javascripts.html.twig') }}
         {% endblock %}
     </head>
     <body>
@@ -21,6 +22,6 @@
             {% block body %}{% endblock %}
         {% endblock %}
 
-        {{ nglayouts_template_plugin('preview.body') }}
+        {{ include('@NetgenLayouts/preview/body.html.twig') }}
     </body>
 </html>
